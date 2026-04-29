@@ -1,0 +1,650 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haier Appliances - La Imperial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="topbar">Delivery across Pakistan | Karachi same-day support available</div>
+            <div class="topbar-links">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="feedback.html">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                <i class="fas fa-shopping-cart"></i> Cart <span id="cartCount"
+                                    class="badge bg-secondary">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    </header>
+
+    <section class="header-main">
+        <div class="container header-grid">
+            <a class="brand-lockup" href="index.html">
+                <span class="brand-mark">
+                    <img src="logo.jpeg" alt="La Imperial Appliances logo">
+                </span>
+                <span class="brand-copy">
+                    <strong>La Imperial</strong>
+                    <small>Appliances </small>
+                </span>
+            </a>
+
+            <form class="header-search" role="search">
+                <label class="visually-hidden" for="searchBar">Search Haier products</label>
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchBar" class="search-input" placeholder="Search Haier appliances">
+                <button type="button" class="search-button" id="searchButton">Search</button>
+            </form>
+
+            <div class="header-actions">
+                <a class="action-pill" href="index.html">
+                    <i class="fas fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <nav class="category-strip">
+        <div class="container category-strip-inner">
+            <a href="haier.html">Haier</a>
+            <a href="dawlance.html">Dawlance</a>
+            <a href="LG.html">LG</a>
+            <a href="panasonic.html">Panasonic</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <article class="hero-card hero-card-primary">
+                        <div class="hero-copy">
+                            <span class="eyebrow">Dedicated Haier Collection</span>
+                            <h1>Explore all Haier products in one separate page with full details and shopping actions.
+                            </h1>
+                            <p>This page gathers the complete Haier range from your store so customers can browse
+                                refrigerators, washers, kitchen appliances, and home essentials in one focused
+                                collection.</p>
+                            <div class="hero-actions">
+                                <a href="#products" class="hero-btn hero-btn-light">View Haier Products</a>
+                                <a href="index.html" class="hero-btn hero-btn-outline">Back to Home</a>
+                            </div>
+                        </div>
+                        <div class="hero-media">
+                            <img src="all haier.jpg" alt="Haier appliance collection">
+                        </div>
+                    </article>
+
+                    <div class="hero-side">
+                        <article class="promo-card promo-dark">
+                            <span class="promo-tag">Haier Focus</span>
+                            <h2>All Haier appliances are now grouped on their own page</h2>
+                            <p>Customers can search the full Haier lineup without mixing it with other brands on the
+                                home page.</p>
+                        </article>
+                        <article class="promo-card promo-light">
+                            <span class="promo-tag">Quick Shopping</span>
+                            <h2>Same card design, quick view, cart, and search experience</h2>
+                            <p>The styling and buying flow stay matched with the rest of your store.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Haier Collection</span>
+                        <h2 id="productsSectionTitle">Haier Appliances</h2>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Haier Product Categories
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#products" data-filter-link="all">Show All</a></li>
+                        <li><a class="dropdown-item" href="#refrigerators"
+                                data-filter-link="refrigerators">Refrigerators</a></li>
+                        <li><a class="dropdown-item" href="#washing-machines"
+                                data-filter-link="washing-machines">Washing Machines</a></li>
+                        <li><a class="dropdown-item" href="#air-conditioners" data-filter-link="air-conditioners">Air
+                                Conditioners</a></li>
+                        <li><a class="dropdown-item" href="#dishwashers" data-filter-link="dishwashers">Dishwashers</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#microwaves" data-filter-link="microwaves">Microwave
+                                Ovens</a></li>
+                        <li><a class="dropdown-item" href="#irons" data-filter-link="irons">Clothing Irons</a></li>
+                        <li><a class="dropdown-item" href="#air-fryers" data-filter-link="air-fryers">Air Fryers</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#mixers" data-filter-link="mixers">Mixers and Grinders</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#water-dispensers" data-filter-link="water-dispensers">Water
+                                Dispensers</a></li>
+                        <li><a class="dropdown-item" href="#robot-vacuums" data-filter-link="robot-vacuums">Robot Vacuum
+                                Cleaners</a></li>
+                    </ul>
+                </div>
+
+                <div class="products-grid">
+                    <article id="refrigerators" class="product-card" data-category="haier"
+                        data-description="Haier French Door Refrigerator HRF-525MB offers twin inverter cooling, deodorizing freshness, and a roomy 468 litre storage layout for modern families."
+                        data-specs='["Model: HRF-525MB", "Capacity: 468 Litres", "Cooling: Twin Inverter Technology", "Finish: Gemstone Black"]'
+                        data-features='["Deo Fresh system", "Humidity control zone", "Multi Air Flow", "Automatic defrost"]'>
+                        <div class="product-badge">Haier</div>
+                        <img src="Haier Refrigerator.png" class="product-image" alt="Haier Refrigerator">
+                        <div class="product-body">
+                            <span class="product-category">Haier</span>
+                            <h3 class="card-title">Haier French Door Refrigerator</h3>
+                            <div class="price-stack">
+                                <strong class="sale-price">Rs.197,558</strong>
+                                <span class="old-price">Rs.210,000</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-outline view-details" data-product="Haier French Door Refrigerator"
+                                    data-price="197558"
+                                    data-image="images/haierappliances/Haier Appliances/Haier Refrigerator.png">Quick
+                                    View</button>
+                                <button class="btn-solid add-to-cart" data-product="Haier French Door Refrigerator"
+                                    data-price="197558">Add to Cart</button>
+                            </div>
+                            <div class="download-section">
+
+                                <a href="Haier_HRF-525MB_Refrigerator_Details.docx" download class="download-btn">
+
+                                    Download Haier Refrigerator Details
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="washing-machines" class="product-card" data-category="haier"
+                        data-description="Haier front load washer dryer HWD80-BP14636S combines 8 kg washing and 5 kg drying with a 1400 RPM spin speed and easy LED controls."
+                        data-specs='["Model: HWD80-BP14636S", "Wash Capacity: 8 kg", "Dry Capacity: 5 kg", "Spin Speed: 1400 RPM"]'
+                        data-features='["Washer dryer combo", "LED display", "Multiple wash options", "Durable build"]'>
+                        <div class="product-badge">Haier</div>
+                        <img src="Haier Washing Machine.png" class="product-image" alt="Haier Washing Machine">
+                        <div class="product-body">
+                            <span class="product-category">Haier</span>
+                            <h3 class="card-title">Haier Washer Dryer Combo</h3>
+                            <div class="price-stack">
+                                <strong class="sale-price">Rs.174,763</strong>
+                                <span class="old-price">Rs.186,000</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-outline view-details" data-product="Haier Washer Dryer Combo"
+                                    data-price="174763"
+                                    data-image="images/haierappliances/Haier Appliances/Haier Washing Machine.png">Quick
+                                    View</button>
+                                <button class="btn-solid add-to-cart" data-product="Haier Washer Dryer Combo"
+                                    data-price="174763">Add to Cart</button>
+                            </div>
+                              <div class="download-section">
+
+                                <a href="Haier_Haier Washing machine_Details.pdf" download class="download-btn">
+
+                                    Download Haier Washing Machine Details
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="air-conditioners" class="product-card" data-category="haier"
+                        data-description="Haier split air conditioner HSU30LPA03 delivers heavy-duty cooling for large rooms with a 2.5 ton capacity, rotary compressor performance, and low-noise comfort."
+                        data-specs='["Model: HSU30LPA03", "Capacity: 2.5 Ton", "Cooling: 30,000 BTU/hr", "Refrigerant: R-410A"]'
+                        data-features='["Rotary compressor", "Sleep mode", "Air purification", "Low-noise operation"]'>
+                        <div class="product-badge">Haier</div>
+                        <img src="Haier Air Conditioner.png" class="product-image" alt="Haier Air Conditioner">
+                        <div class="product-body">
+                            <span class="product-category">Haier</span>
+                            <h3 class="card-title">Haier Split Air Conditioner</h3>
+                            <div class="price-stack">
+                                <strong class="sale-price">Rs.220,353</strong>
+                                <span class="old-price">Rs.235,000</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-outline view-details" data-product="Haier Split Air Conditioner"
+                                    data-price="220353" data-image="Haier Air Conditioner.png">Quick View</button>
+                                <button class="btn-solid add-to-cart" data-product="Haier Split Air Conditioner"
+                                    data-price="220353">Add to Cart</button>
+                            </div>
+                              <div class="download-section">
+
+                                <a href="Haier Split Air Conditioner_Details.pdf" download class="download-btn">
+
+                                    Download Haier Air Conditioner Details
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="dishwashers" class="product-card" data-category="haier"
+                        data-description="Haier stainless steel interior dishwasher QDT125SSLSS brings a sanitize cycle, WiFi capability, and a 3-level wash system for premium kitchen convenience."
+                        data-specs='["Model: QDT125SSLSS", "Type: Built-in Dishwasher", "Interior: Stainless Steel", "Efficiency: ENERGY STAR Qualified"]'
+                        data-features='["3 level wash", "Sanitize cycle", "WiFi capable", "Hard food disposer"]'>
+                        <div class="product-badge">Haier</div>
+                        <img src="Haier Dishwasher.png" class="product-image" alt="Haier Dishwasher">
+                        <div class="product-body">
+                            <span class="product-category">Haier</span>
+                            <h3 class="card-title">Haier Stainless Dishwasher</h3>
+                            <div class="price-stack">
+                                <strong class="sale-price">Rs.222,720</strong>
+                                <span class="old-price">Rs.236,000</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-outline view-details" data-product="Haier Stainless Dishwasher"
+                                    data-price="222720" data-image="Haier Dishwasher.png">Quick View</button>
+                                <button class="btn-solid add-to-cart" data-product="Haier Stainless Dishwasher"
+                                    data-price="222720">Add to Cart</button>
+                            </div>
+                              <div class="download-section">
+
+                                <a href="Haier Dishwasher_Details.pdf" download class="download-btn">
+
+                                    Download Haier Dishwasher Details
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="microwaves" class="product-card" data-category="haier"
+                        data-description="Haier microwave oven HMW-45DGM supports intelligent auto menus and a grilling feature, giving families a simple way to handle everyday reheating and quick meals."
+                        data-specs='["Model: HMW-45DGM", "Type: Microwave Oven", "Cooking: Auto Menu + Grill", "Use: Countertop"]'
+                        data-features='["Intelligent Chef menus", "Grilling feature", "Quick reheating", "Easy daily cooking"]'>
+                        <div class="product-badge">Haier</div>
+                        <img src="Haier Microwave.png" class="product-image" alt="Haier Microwave Oven">
+                        <div class="product-body">
+                            <span class="product-category">Haier</span>
+                            <h3 class="card-title">Haier Microwave Oven</h3>
+                            <div class="price-stack">
+                                <strong class="sale-price">Rs.52,000</strong>
+                                <span class="old-price">Rs.57,500</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-outline view-details" data-product="Haier Microwave Oven"
+                                    data-price="52000" data-image="Haier Microwave.png">Quick View</button>
+                                <button class="btn-solid add-to-cart" data-product="Haier Microwave Oven"
+                                    data-price="52000">Add to Cart</button>
+                            </div>
+                              <div class="download-section">
+
+                                <a href="Haier Microwave Oven Details.pdf" download class="download-btn">
+
+                                    Download Haier Microwave oven Details
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="irons" class="product-card" data-category="haier"
+                        data-description="Haier HSR-8063 clothing iron supports dry, steam, burst, spray, and self-clean functions with adjustable temperature control and a ceramic soleplate for smooth household ironing."
+                        data-specs='["Model: HSR-8063", "Type: Steam + Dry Iron", "Water Tank: 260ml", "Soleplate: Ceramic"]'
+                        data-features='["Dry and steam modes", "Burst and spray support", "Temperature adjustment knob", "Overheat protection"]'>
+                        <div class="product-badge">Haier</div>
+                        <img src="Haier Iron.png" class="product-image" alt="Haier Iron">
+                        <div class="product-body">
+                            <span class="product-category">Haier</span>
+                            <h3 class="card-title">Haier HSR-8063 Iron</h3>
+                            <div class="price-stack">
+                                <strong class="sale-price">Rs.6,000</strong>
+                                <span class="old-price">Rs.7,200</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-outline view-details" data-product="Haier HSR-8063 Clothing Iron"
+                                    data-price="6000" data-image="Haier Iron.png">Quick View</button>
+                                <button class="btn-solid add-to-cart" data-product="Haier HSR-8063 Clothing Iron"
+                                    data-price="6000">Add to Cart</button>
+                            </div>
+                                  <div class="download-section">
+
+                                <a href="Haier HSR-8063 Iron Details.pdf" download class="download-btn">
+
+                                    Download Haier Iron Details
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="air-fryers" class="product-card" data-category="haier"
+                        data-description="Haier KDK40-DBW air fryer offers a 4 litre capacity with a simple design and easy-clean setup for practical everyday cooking at home."
+                        data-specs='["Model: KDK40-DBW", "Type: Air Fryer", "Capacity: 4.0 Litres", "Use: Countertop Kitchen Appliance"]'
+                        data-features='["4 litre basket", "Simple design", "Easy cleaning", "Everyday home cooking"]'>
+                        <div class="product-badge">Haier</div>
+                        <img src="Haier Air Fryer.png" class="product-image" alt="Haier Air Fryer">
+                        <div class="product-body">
+                            <span class="product-category">Haier</span>
+                            <h3 class="card-title">Haier KDK40-DBW Air Fryer</h3>
+                            <div class="price-stack">
+                                <strong class="sale-price">Rs.23,000</strong>
+                                <span class="old-price">Rs.26,500</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-outline view-details" data-product="Haier KDK40-DBW Air Fryer"
+                                    data-price="23000" data-image="Haier Air Fryer.png">Quick View</button>
+                                <button class="btn-solid add-to-cart" data-product="Haier KDK40-DBW Air Fryer"
+                                    data-price="23000">Add to Cart</button>
+                            </div>
+                              <div class="download-section">
+
+                                <a href="Haier KDK40-DBW Air Fryer_Details.pdf" download class="download-btn">
+
+                                    Download Haier Air Fryer Details
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="mixers" class="product-card" data-category="haier"
+                        data-description="Haier Mixer and Grinder B01LEKHJG2 is designed for practical kitchen prep with safety lid locking, an interlocking safety system, durable blades, and simple daily operation."
+                        data-specs='["Model: B01LEKHJG2", "Type: Mixer and Grinder", "Use: Countertop kitchen prep", "Focus: Safe and simple operation"]'
+                        data-features='["Safety lid locking system", "Interlocking safety system", "Easy to use", "Durable blades"]'>
+                        <div class="product-badge">Haier</div>
+                        <img src="Haier Mixer.png" class="product-image" alt="Haier Mixer">
+                        <div class="product-body">
+                            <span class="product-category">Haier</span>
+                            <h3 class="card-title">Haier Mixer and Grinder</h3>
+                            <div class="price-stack">
+                                <strong class="sale-price">Rs.20,000</strong>
+                                <span class="old-price">Rs.22,500</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-outline view-details" data-product="Haier Mixer and Grinder"
+                                    data-price="20000" data-image="Haier Mixer.png">Quick View</button>
+                                <button class="btn-solid add-to-cart" data-product="Haier Mixer and Grinder"
+                                    data-price="20000">Add to Cart</button>
+                            </div>
+                              <div class="download-section">
+
+                                <a href="Haier Mixer and Grinder Details.pdf" download class="download-btn">
+
+                                    Download Haier Mixer & Grinder Details
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="water-dispensers" class="product-card" data-category="haier"
+                        data-description="Haier water dispenser YLR2JX5 provides hot, cold, and normal water options with compressor-based cooling for practical household and office use."
+                        data-specs='["Model: YLR2JX5", "Type: Water Dispenser", "Water Options: Hot, Cold, and Normal", "Cooling: R134a Compressor"]'
+                        data-features='["Hot, cold, and normal taps", "R134a compressor cooling", "Practical daily use", "Reliable dispenser setup"]'>
+                        <div class="product-badge">Haier</div>
+                        <img src="Haier Water Dispenser.png" class="product-image" alt="Haier Water Dispenser">
+                        <div class="product-body">
+                            <span class="product-category">Haier</span>
+                            <h3 class="card-title">Haier Water Dispenser</h3>
+                            <div class="price-stack">
+                                <strong class="sale-price">Rs.34,193</strong>
+                                <span class="old-price">Rs.38,000</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-outline view-details" data-product="Haier Water Dispenser"
+                                    data-price="34193" data-image="Haier Water Dispenser.png">Quick View</button>
+                                <button class="btn-solid add-to-cart" data-product="Haier Water Dispenser"
+                                    data-price="34193">Add to Cart</button>
+                            </div>
+                              <div class="download-section">
+
+                                <a href="Haier Water Dispenser Details.pdf" download class="download-btn">
+
+                                    Download Haier Water Dispenser Details
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article id="robot-vacuums" class="product-card" data-category="haier"
+                        data-description="Haier robot vacuum cleaner offers smart floor cleaning with automated navigation, strong suction, and hands-free maintenance for everyday home cleaning."
+                        data-specs='["Model: Robot Vacuum Cleaner", "Type: Robotic Vacuum", "Navigation: Smart Auto Mapping", "Use: Floor Cleaning"]'
+                        data-features='["Auto cleaning routes", "Strong suction", "Scheduled cleaning", "Easy home maintenance"]'>
+                        <div class="product-badge">Haier</div>
+                        <img src="Haier Robot Vacuum Cleaner.png" class="product-image"
+                            alt="Haier Robot Vacuum Cleaner">
+                        <div class="product-body">
+                            <span class="product-category">Haier</span>
+                            <h3 class="card-title">Haier Robot Vacuum Cleaner</h3>
+                            <div class="price-stack">
+                                <strong class="sale-price">Rs.32,193</strong>
+                                <span class="old-price">Rs.34,000</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-outline view-details" data-product="Haier Robot Vacuum Cleaner"
+                                    data-price="32193" data-image="Haier Robot Vacuum Cleaner.png">Quick View</button>
+                                <button class="btn-solid add-to-cart" data-product="Haier Robot Vacuum Cleaner"
+                                    data-price="32193">Add to Cart</button>
+                            </div>
+                              <div class="download-section">
+
+                                <a href="Haier Robot Vacuum Cleaner Details.pdf" download class="download-btn">
+
+                                    Download Haier Vacuum Cleaner Details
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>La Imperial Appliances</h3>
+                <p>Your dedicated Haier collection is now separated for easier browsing and a cleaner home page
+                    experience.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="haier.html">Haier</a>
+                <a href="About us.html">About Us</a>
+                <a href="contact us.html">Contact Us</a>
+            </div>
+            <div>
+                <h4>Payment Methods</h4>
+                <p>Secure online payment options available for your orders.</p>
+                <div class="footer-payments">
+                    <img src="Visa Logo.png" alt="Visa">
+                    <img src="Mastercard Logo.png" alt="Mastercard">
+                    <img src="Jazzcash Logo.png" alt="JazzCash">
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 La Imperial Appliances. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems">
+                        <p class="text-center">Your cart is empty</p>
+                    </div>
+                    <div id="cartTotal" class="mt-3 d-none">
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <strong>Total: Rs.<span id="totalAmount">0.00</span></strong>
+                        </div>
+                        <div class="payment-panel">
+                            <div class="payment-heading">
+                                <h6>Select Online Payment Method</h6>
+                                <p>Choose Visa, Mastercard, or JazzCash before checkout.</p>
+                            </div>
+                            <div class="payment-methods">
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="Visa" data-payment-type="card">
+                                    <span class="payment-method-card">
+                                        <img src="Visa Logo.png" alt="Visa">
+                                        <strong>Visa</strong>
+                                    </span>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="Mastercard"
+                                        data-payment-type="card">
+                                    <span class="payment-method-card">
+                                        <img src="Mastercard Logo.png" alt="Mastercard">
+                                        <strong>Mastercard</strong>
+                                    </span>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="JazzCash"
+                                        data-payment-type="wallet">
+                                    <span class="payment-method-card">
+                                        <img src="Jazzcash Logo.png" alt="JazzCash">
+                                        <strong>JazzCash</strong>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div id="cardPaymentFields" class="payment-fields card border-0 bg-body-tertiary mt-3">
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="cardName" class="form-label">Cardholder Name</label>
+                                            <input type="text" class="form-control" id="cardName"
+                                                placeholder="Enter cardholder name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cardNumber" class="form-label">Card Number</label>
+                                            <input type="text" class="form-control" id="cardNumber"
+                                                placeholder="1234 5678 9012 3456" maxlength="19">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cardExpiry" class="form-label">Expiry Date</label>
+                                            <input type="text" class="form-control" id="cardExpiry" placeholder="MM/YY"
+                                                maxlength="5">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cardCvv" class="form-label">CVV</label>
+                                            <input type="password" class="form-control" id="cardCvv" placeholder="123"
+                                                maxlength="4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="walletPaymentFields"
+                                class="payment-fields card border-0 bg-body-tertiary mt-3 d-none">
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="walletNumber" class="form-label">JazzCash Number</label>
+                                            <input type="text" class="form-control" id="walletNumber"
+                                                placeholder="03XX XXXXXXX" maxlength="11">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="walletPin" class="form-label">Transaction PIN</label>
+                                            <input type="password" class="form-control" id="walletPin"
+                                                placeholder="Enter PIN" maxlength="6">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="paymentMessage" class="alert d-none mt-3 mb-0" role="alert"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button type="button" class="btn btn-primary" id="checkoutBtn" disabled>Pay Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-md-6">
+                            <img id="productImage" src="" alt="" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 id="productTitle"></h4>
+                            <p class="h5 text-dark mb-3" id="productPrice"></p>
+                            <p id="productDescription" class="mb-3"></p>
+                            <h6>Specifications</h6>
+                            <ul id="productSpecs" class="mb-3"></ul>
+                            <h6>Key Features</h6>
+                            <ul id="productFeatures"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark" id="addToCartFromModal">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/cart-storage.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+
+</html>

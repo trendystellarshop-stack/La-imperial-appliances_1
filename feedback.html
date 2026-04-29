@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Imperial Appliances - Feedback</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/feedback.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+             <div class="topbar">Delivery across Pakistan | Karachi same-day support available</div>
+                <div class="topbar-links">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i> Cart <span id="cartCount" class="badge bg-secondary">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        </header>
+
+        <section class="header-main">
+            <div class="container header-grid">
+                <a class="brand-lockup" href="index.html">
+                    <span class="brand-mark"><img src="logo.jpeg" alt="La Imperial Appliances logo"></span>
+                    <span class="brand-copy">
+                        <strong>La Imperial</strong>
+                        <small>Appliances</small>
+                    </span>
+                </a>
+
+                <form class="header-search" role="search">
+                    <label class="visually-hidden" for="searchBar">Search products</label>
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchBar" class="search-input" placeholder="Search any product, category or brand">
+                    <button type="submit" class="search-button">Search</button>
+                </form>
+
+                <div class="header-actions">
+                    <a class="action-pill is-current" href="feedback.html">
+                        <i class="fas fa-comment-dots"></i>
+                        <span>Feedback</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <section class="page-hero">
+                <div class="container hero-panel">
+                    <div class="hero-copy">
+                        <span class="eyebrow">Customer Feedback</span>
+                        <h1>Feedback page redesigned with the same polished marketplace feel as the rest of the site.</h1>
+                        <p>Customers can now leave feedback inside a cleaner, stronger layout that matches the upgraded storefront style and keeps the form front and center.</p>
+                    </div>
+                    <div class="hero-sidecard">
+                        <span class="hero-label">Why It Matters</span>
+                        <strong>Reviews help improve products, service, and site experience</strong>
+                        <p>This page now feels connected to the homepage instead of looking like a separate template.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feedback-section">
+                <div class="container feedback-grid">
+                    <article class="feedback-intro">
+                        <span class="eyebrow">Your Voice</span>
+                        <h2>Tell us how we can improve</h2>
+                        <p>We use customer feedback to improve product discovery, support quality, and the overall shopping experience across La Imperial Appliances.</p>
+                        <div class="intro-points">
+                            <div class="intro-point">
+                                <i class="fas fa-star"></i>
+                                <span>Rate your experience</span>
+                            </div>
+                            <div class="intro-point">
+                                <i class="fas fa-laptop-house"></i>
+                                <span>Share product or website feedback</span>
+                            </div>
+                            <div class="intro-point">
+                                <i class="fas fa-people-carry"></i>
+                                <span>Help us improve support and service</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="form-card">
+                        <span class="eyebrow">Submit Feedback</span>
+                        <h2>Leave your thoughts</h2>
+
+                        <form id="feedbackForm" novalidate>
+                            <div class="form-grid">
+                                <div class="field-group">
+                                    <label for="feedbackName">Name</label>
+                                    <input type="text" id="feedbackName" pattern="[A-Za-z]+(?:\s+[A-Za-z]+)+" title="Please enter your full name with at least two words." required>
+                                </div>
+                                <div class="field-group">
+                                    <label for="feedbackEmail">Email</label>
+                                    <input type="email" id="feedbackEmail" required>
+                                </div>
+                            </div>
+
+                            <div class="field-group">
+                                <label>Rating</label>
+                                <div class="rating-row">
+                                    <label><input type="radio" id="star5" name="rating" value="5"> 5</label>
+                                    <label><input type="radio" id="star4" name="rating" value="4"> 4</label>
+                                    <label><input type="radio" id="star3" name="rating" value="3"> 3</label>
+                                    <label><input type="radio" id="star2" name="rating" value="2"> 2</label>
+                                    <label><input type="radio" id="star1" name="rating" value="1"> 1</label>
+                                </div>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="feedbackType">Feedback Type</label>
+                                <select id="feedbackType" required>
+                                    <option value="">Select feedback type</option>
+                                    <option value="general">General</option>
+                                    <option value="product">Product</option>
+                                    <option value="service">Customer Service</option>
+                                    <option value="website">Website</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="feedbackMessage">Feedback</label>
+                                <textarea id="feedbackMessage" rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-button">Submit Feedback</button>
+                        </form>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div>
+                    <h3>La Imperial Appliances</h3>
+                    <p>Storefront-inspired design with trusted guidance for home, kitchen, cooling, and cleaning appliances.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="About us.html">About Us</a>
+                    <a href="contact us.html">Contact Us</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+                <div>
+                    <h4>Payment Methods</h4>
+                    <p>Secure online payment options available for your orders.</p>
+                    <div class="footer-payments">
+                        <img src="Visa Logo.png" alt="Visa">
+                        <img src="Mastercard Logo.png" alt="Mastercard">
+                        <img src="Jazzcash Logo.png" alt="JazzCash">
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <p>&copy; 2026 La Imperial Appliances. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/cart-storage.js"></script>
+    <script src="../js/feedback.js"></script>
+</body>
+</html>
