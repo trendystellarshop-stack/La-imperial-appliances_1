@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG - La Imperial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+             <div class="topbar">Delivery across Pakistan | Karachi same-day support available</div>
+                <div class="topbar-links">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i> Cart <span id="cartCount" class="badge bg-secondary">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        </header>
+
+        <section class="header-main">
+            <div class="container header-grid">
+                <a class="brand-lockup" href="index.html">
+                    <span class="brand-mark">
+                        <img src="logo.jpeg" alt="La Imperial Appliances logo">
+                    </span>
+                    <span class="brand-copy">
+                        <strong>La Imperial</strong>
+                        <small>Appliances </small>
+                    </span>
+                </a>
+
+                <form class="header-search" role="search">
+                    <label class="visually-hidden" for="searchBar">Search LG products</label>
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchBar" class="search-input" placeholder="Search LG appliances">
+                    <button type="button" class="search-button" id="searchButton">Search</button>
+                </form>
+
+                <div class="header-actions">
+                    <a class="action-pill" href="index.html">
+                        <i class="fas fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <nav class="category-strip">
+            <div class="container category-strip-inner">
+                <a href="haier.html">Haier</a>
+                <a href="dawlance.html">Dawlance</a>
+                <a href="LG.html">LG</a>
+                <a href="panasonic.html">Panasonic</a>
+            </div>
+        </nav>
+
+        <main>
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-grid">
+                        <article class="hero-card hero-card-primary">
+                            <div class="hero-copy">
+                                <span class="eyebrow">Dedicated LG Collection</span>
+                                <h1>Explore all LG products in one separate page with full details and shopping actions.</h1>
+                                <p>This page gathers the complete LG range from your store so customers can browse refrigerators, washers, kitchen appliances, and home essentials in one focused collection.</p>
+                                <div class="hero-actions">
+                                    <a href="#products" class="hero-btn hero-btn-light">View LG Products</a>
+                                    <a href="index.html" class="hero-btn hero-btn-outline">Back to Home</a>
+                                </div>
+                            </div>
+                            <div class="hero-media">
+                                <img src="ALL LG.webp" alt="LG appliance collection">
+                            </div>
+                        </article>
+
+                        <div class="hero-side">
+                            <article class="promo-card promo-dark">
+                                <span class="promo-tag">LG Focus</span>
+                                <h2>All LG appliances are now grouped on their own page</h2>
+                                <p>Customers can search the full LG lineup without mixing it with other brands on the home page.</p>
+                            </article>
+                            <article class="promo-card promo-light">
+                                <span class="promo-tag">Quick Shopping</span>
+                                <h2>Same card design, quick view, cart, and search experience</h2>
+                                <p>The styling and buying flow stay matched with the rest of your store.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="products" class="products-section">
+                <div class="container">
+                    <div class="section-heading">
+                        <div>
+                            <span class="eyebrow">LG Collection</span>
+                            <h2 id="productsSectionTitle">LG Appliances</h2>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            LG Product Categories
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#products" data-filter-link="all">Show All</a></li>
+                            <li><a class="dropdown-item" href="#refrigerators" data-filter-link="refrigerators">Refrigerators</a></li>
+                            <li><a class="dropdown-item" href="#microwaves" data-filter-link="microwaves">Microwave Ovens</a></li>
+                            <li><a class="dropdown-item" href="#air-conditioners" data-filter-link="air-conditioners">Air Conditioners</a></li>
+                            <li><a class="dropdown-item" href="#washing-machines" data-filter-link="washing-machines">Washing Machines</a></li>
+                            <li><a class="dropdown-item" href="#dishwashers" data-filter-link="dishwashers">Dishwashers</a></li>
+                            <li><a class="dropdown-item" href="#dispensers" data-filter-link="dispensers">Dispensers</a></li>
+                            <li><a class="dropdown-item" href="#mixers" data-filter-link="mixers">Mixers and Grinders</a></li>
+                            <li><a class="dropdown-item" href="#air-fryers" data-filter-link="air-fryers">Air Fryers</a></li>
+                            <li><a class="dropdown-item" href="#vacuums" data-filter-link="vacuums">Vacuum Cleaners</a></li>
+                            <li><a class="dropdown-item" href="#irons" data-filter-link="irons">Irons</a></li>
+                        </ul>
+                    </div>
+                    <div class="products-grid">
+                        <article class="product-card" data-category="lg" data-description="LG InstaView Door-in-Door refrigerator GR-X39FFCRB brings premium black glass styling, cleaner dispensing, and smart ThinQ connectivity." data-specs='["Model: GR-X39FFCRB", "Type: InstaView Refrigerator", "Finish: Essence Black Steel", "Smart Control: LG ThinQ"]' data-features='["InstaView Door-in-Door", "UVnano dispenser", "LINEARCooling", "Hygiene Fresh+"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Refrigerator.png" class="product-image" alt="LG Refrigerator">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG InstaView Refrigerator</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.835,822</strong>
+                                    <span class="old-price">Rs.860,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG InstaView Refrigerator" data-price="835822" data-image="images/lgaappliances/LG Appliances/LG Refrigerator.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG InstaView Refrigerator" data-price="835822">Add to Cart</button>
+                                </div>
+                                  <div class="download-section">
+
+                                <a href="LG   InstaView Refrigerator Details.docx" download class="download-btn">
+
+                                    Download LG Refrigerator Details
+
+                                </a>
+
+                            </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-category="lg" data-description="LG Grill Microwave Oven MH8265DIS delivers smart inverter heating, even defrosting, and fast everyday cooking in a spacious 42 litre cavity." data-specs='["Model: MH8265DIS", "Capacity: 42 Litres", "Technology: Smart Inverter", "Cooking: Grill + Microwave"]' data-features='["Even heating", "Even defrosting", "Fast cooking", "Large capacity"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Microwave.png" class="product-image" alt="LG Microwave">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Grill Microwave Oven</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.36,396</strong>
+                                    <span class="old-price">Rs.40,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Grill Microwave Oven" data-price="36396" data-image="images/lgaappliances/LG Appliances/LG Microwave.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Grill Microwave Oven" data-price="36396">Add to Cart</button>
+                                </div>
+                                 <div class="download-section">
+
+                                <a href="LG  Grill Microwave Oven Details.docx" download class="download-btn">
+
+                                    Download LG Microwave Oven Details
+
+                                </a>
+
+                            </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-category="lg" data-description="LG split air conditioner T18ZCA gives fast cooling, smart diagnosis, auto swing, and anti-corrosive protection in a 1.5 ton wall-mounted system." data-specs='["Model: T18ZCA", "Capacity: 1.5 Ton", "Controls: 24 hour timer", "Protection: Anti-corrosive coating"]' data-features='["Fast cooling", "Auto swing", "Smart diagnosis", "Auto restart"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Air Conditioner.png" class="product-image" alt="LG Air Conditioner">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Split Air Conditioner</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.110,177</strong>
+                                    <span class="old-price">Rs.121,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Split Air Conditioner" data-price="110177" data-image="LG Air Conditioner.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Split Air Conditioner" data-price="110177">Add to Cart</button>
+                                </div>
+                                 <div class="download-section">
+
+                                <a href="LG Split Air Conditioner Details.docx" download class="download-btn">
+
+                                    Download LG  Air Conditioner Details
+
+                                </a>
+
+                            </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-category="lg" data-description="LG front load washer dryer F15L9DGD combines a 13 kg washer, 8 kg dryer, AI DD fabric care, TurboWash, steam technology, and ThinQ connectivity." data-specs='["Model: F15L9DGD", "Wash Capacity: 13 kg", "Dry Capacity: 8 kg", "Smart Control: LG ThinQ"]' data-features='["AI DD fabric sensing", "TurboWash", "Steam care", "Smart diagnosis"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Washing Machine.png" class="product-image" alt="LG Washing Machine">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Washer Dryer AI DD</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.203,105</strong>
+                                    <span class="old-price">Rs.218,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Washer Dryer AI DD" data-price="203105" data-image="LG Washing Machine.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Washer Dryer AI DD" data-price="203105">Add to Cart</button>
+                                </div>
+                                 <div class="download-section">
+
+                                <a href="LG Washer Dryer Details.docx" download class="download-btn">
+
+                                    Download LG  Washer Dryer Details
+
+                                </a>
+
+                            </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-category="lg" data-description="LG freestanding dishwasher DFB325HM uses TrueSteam, QuadWash, EasyRack Plus, and Inverter Direct Drive performance for efficient premium dish care." data-specs='["Model: DFB325HM", "Type: Freestanding Dishwasher", "Drive: Inverter Direct Drive", "Smart Control: ThinQ"]' data-features='["TrueSteam", "QuadWash", "EasyRack Plus", "ThinQ support"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Dishwasher.png" class="product-image" alt="LG Dishwasher">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Freestanding Dishwasher</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.265,184</strong>
+                                    <span class="old-price">Rs.279,500</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Freestanding Dishwasher" data-price="265184" data-image="LG Dishwasher.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Freestanding Dishwasher" data-price="265184">Add to Cart</button>
+                                </div>
+                                 <div class="download-section">
+
+                                <a href="LG Freestanding Dishwasher Details.docx" download class="download-btn">
+
+                                    Download LG  Dishwasher Details
+
+                                </a>
+
+                            </div>
+                            </div>
+                        </article>
+                          <article class="product-card" data-category="lg" data-description="An LG dispenser is a convenient kitchen appliance designed to store and dispense beverages, water, or other liquids with ease." data-specs='["Model: DG100", "Type: Freestanding Dispenser", "Capacity: 446L – 760L+", "Compressor: Inverter Linear Compressor"]' data-features='["Inverter Linear Compressor", "Hygiene Fresh+ Filter", "Touch Control Panel", "Multi Air Flow Cooling"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Dispenser.png" class="product-image" alt="LG Dispenser">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Dispenser</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs. 212,000</strong>
+                                    <span class="old-price">Rs.327,500</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Dispenser" data-price="212000" data-image="LG Dispenser.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Dispenser" data-price="212000">Add to Cart</button>
+                                </div>
+                                  <div class="download-section">
+
+                                <a href="LG Dispenser Details.docx" download class="download-btn">
+
+                                    Download LG  Dispenser Details
+
+                                </a>
+
+                            </div>
+                            </div>
+                        </article>
+                          <article class="product-card" data-category="lg" data-description="An LG mixer grinder is a multi-functional kitchen appliance used for grinding spices, blending ingredients, and preparing pastes, juices, and batters. It is designed for fast, efficient, and everyday cooking tasks with a powerful motor and durable components." data-specs='["Model: MG200", "Type: Mixer Grinder", "Power: ~850W – 1000W", "Voltage: 220–240V"]' data-features='["Powerful Motor", "Durable Components", "3-Speed Control + Pulse", "Multi-functional Jars"]' data-image="LG Mixer Grinder.png">
+                            <div class="product-badge">LG</div>
+                            <img src="LG Mixer Grinder.png" class="product-image" alt="LG Mixer Grinder">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Mixer Grinder</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.25,184</strong>
+                                    <span class="old-price">Rs.39,500</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Mixer Grinder" data-price="25184" data-image="LG Mixer Grinder.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Mixer Grinder" data-price="25184">Add to Cart</button>
+                                </div>
+                                 <div class="download-section">
+
+                                <a href="LG Mixer Grinder Details.docx" download class="download-btn">
+
+                                    Download LG  Mixer Grinder Details
+
+                                </a>
+
+                            </div>
+                            </div>
+                        </article>
+                          <article class="product-card" data-category="lg" data-description="An LG air fryer is usually integrated into LG ovens or smart cooking ranges rather than standalone units. It uses advanced convection (hot air circulation) to cook food evenly with little or no oil, offering healthier and faster cooking." data-specs='["Model: AF500", "Type:  Air Fryer", "Power: ~1500W – 2500W (depending on oven size)", "Capacity: 3.5L – 5L"]' data-features='["Advanced Convection", "Even Cooking", "Easy to Clean", "Smart Cooking"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Air Fryer.png" class="product-image" alt="LG Air Fryer">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Air Fryer</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.30,000</strong>
+                                    <span class="old-price">Rs.49,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Air Fryer" data-price="30000" data-image="LG Air Fryer.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Air Fryer" data-price="30000">Add to Cart</button>
+                                </div>
+                                  <div class="download-section">
+
+                                <a href="LG Air Fryer Details.docx" download class="download-btn">
+
+                                    Download LG  Air Fryer Details
+
+                                </a>
+
+                            </div>
+                            </div>
+                        </article>
+                          <article class="product-card" data-category="lg" data-description="An LG vacuum cleaner is a high-performance cleaning appliance designed for powerful dust removal, advanced filtration, and multi-surface cleaning. LG offers different types such as bagless, cordless stick, robot, and drum vacuum cleaners for various home needs." data-specs='["Power: 1800W – 2600W", "Water Tank Capacity: ~150 – 300 ml", "Weight: ~4–8 kg (varies by type)", "Noise Level: ~60–82 dB"]' data-features='["High Suction Power", "HEPA Filtration System", "Multiple Attachments", "Cordless / Corded Options"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Vacuum Cleaner.png" class="product-image" alt="LG Vacuum Cleaner">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Vacuum Cleaner</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.35,184</strong>
+                                    <span class="old-price">Rs.50,500</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Vacuum Cleaner" data-price="35184" data-image="LG Vacuum Cleaner.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Vacuum Cleaner" data-price="35184">Add to Cart</button>
+                                </div>
+                                  <div class="download-section">
+
+                                <a href="LG Vacuum Cleaner Details.docx" download class="download-btn">
+
+                                    Download LG  Vacuum Cleaner Details
+
+                                </a>
+
+                            </div>
+                            </div>
+                        </article>
+                          <article class="product-card" data-category="lg" data-description="An LG electric iron is designed for efficient wrinkle removal with modern steam technology, offering smooth gliding, quick heating, and safety features for everyday ironing." data-specs='["Power: ~1200W – 1800W", "Water Tank Capacity: ~150 – 300 ml", "Voltage: 220–240V", "Heating Time: ~20–30 seconds (fast start models)"]' data-features='["Modern Steam Technology", "Adjustable Temperature Control", "Anti-Calc System", "Ceramic / Non-stick Soleplate"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Iron.png" class="product-image" alt="LG Iron">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Iron</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.12,184</strong>
+                                    <span class="old-price">Rs.27,500</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Iron" data-price="12184" data-image="LG Iron.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Iron" data-price="12184">Add to Cart</button>
+                                </div>
+                                  <div class="download-section">
+
+                                <a href="LG Iron Details.docx" download class="download-btn">
+
+                                    Download LG  Iron Details
+
+                                </a>
+
+                            </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+              <footer class="site-footer">
+            <div class="container footer-grid">
+                <div>
+                    <h3>La Imperial Appliances</h3>
+                    <p>Your dedicated Dawlance collection is now separated for easier browsing and a cleaner home page experience.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="dawlance.html">Dawlance</a>
+                    <a href="About us.html">About Us</a>
+                    <a href="contact us.html">Contact Us</a>
+                </div>
+                <div>
+                    <h4>Payment Methods</h4>
+                    <p>Secure online payment options available for your orders.</p>
+                    <div class="footer-payments">
+                        <img src="Visa Logo.png" alt="Visa">
+                        <img src="Mastercard Logo.png" alt="Mastercard">
+                        <img src="Jazzcash Logo.png" alt="JazzCash">
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <p>&copy; 2026 La Imperial Appliances. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems">
+                        <p class="text-center">Your cart is empty</p>
+                    </div>
+                    <div id="cartTotal" class="mt-3 d-none">
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <strong>Total: Rs.<span id="totalAmount">0.00</span></strong>
+                        </div>
+                        <div class="payment-panel">
+                            <div class="payment-heading">
+                                <h6>Select Online Payment Method</h6>
+                                <p>Choose Visa, Mastercard, or JazzCash before checkout.</p>
+                            </div>
+                            <div class="payment-methods">
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="Visa" data-payment-type="card">
+                                    <span class="payment-method-card">
+                                        <img src="Visa Logo.png" alt="Visa">
+                                        <strong>Visa</strong>
+                                    </span>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="Mastercard" data-payment-type="card">
+                                    <span class="payment-method-card">
+                                        <img src="Mastercard Logo.png" alt="Mastercard">
+                                        <strong>Mastercard</strong>
+                                    </span>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="JazzCash" data-payment-type="wallet">
+                                    <span class="payment-method-card">
+                                        <img src="Jazzcash Logo.png" alt="JazzCash">
+                                        <strong>JazzCash</strong>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div id="cardPaymentFields" class="payment-fields card border-0 bg-body-tertiary mt-3">
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="cardName" class="form-label">Cardholder Name</label>
+                                            <input type="text" class="form-control" id="cardName" placeholder="Enter cardholder name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cardNumber" class="form-label">Card Number</label>
+                                            <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cardExpiry" class="form-label">Expiry Date</label>
+                                            <input type="text" class="form-control" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cardCvv" class="form-label">CVV</label>
+                                            <input type="password" class="form-control" id="cardCvv" placeholder="123" maxlength="4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="walletPaymentFields" class="payment-fields card border-0 bg-body-tertiary mt-3 d-none">
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="walletNumber" class="form-label">JazzCash Number</label>
+                                            <input type="text" class="form-control" id="walletNumber" placeholder="03XX XXXXXXX" maxlength="11">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="walletPin" class="form-label">Transaction PIN</label>
+                                            <input type="password" class="form-control" id="walletPin" placeholder="Enter PIN" maxlength="6">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="paymentMessage" class="alert d-none mt-3 mb-0" role="alert"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button type="button" class="btn btn-primary" id="checkoutBtn" disabled>Pay Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-md-6">
+                            <img id="productImage" src="" alt="" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 id="productTitle"></h4>
+                            <p class="h5 text-dark mb-3" id="productPrice"></p>
+                            <p id="productDescription" class="mb-3"></p>
+                            <h6>Specifications</h6>
+                            <ul id="productSpecs" class="mb-3"></ul>
+                            <h6>Key Features</h6>
+                            <ul id="productFeatures"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark" id="addToCartFromModal">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/cart-storage.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>
