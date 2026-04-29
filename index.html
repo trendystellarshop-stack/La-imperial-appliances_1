@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Imperial Appliances - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+             <div class="topbar">Delivery across Pakistan | Karachi same-day support available</div>
+                <div class="topbar-links">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i> Cart <span id="cartCount" class="badge bg-secondary">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        </header>
+
+        <section class="header-main">
+            <div class="container header-grid">
+                <a class="brand-lockup" href="index.html">
+                    <span class="brand-mark">
+                        <img src="logo.jpeg" alt="La Imperial Appliances logo">
+                    </span>
+                    <span class="brand-copy">
+                        <strong>La Imperial</strong>
+                        <small>Appliances</small>
+                    </span>
+                </a>
+
+                <form class="header-search" role="search">
+                    <label class="visually-hidden" for="searchBar">Search products</label>
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchBar" class="search-input" placeholder="Search any appliance or brand">
+                    <button type="button" class="search-button" id="searchButton">Search</button>
+                </form>
+
+                <div class="header-actions">
+                    <a class="action-pill" href="contact us.html">
+                        <i class="far fa-user"></i>
+                        <span>Account</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+      
+
+        <main>
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-grid">
+                        <article class="hero-card hero-card-primary">
+                            <div class="hero-copy">
+                                <span class="eyebrow">Haier, Dawlance, LG & Panasonic</span>
+                                <h1>Discover trusted appliance brands with detailed product cards and quick shopping.</h1>
+                                <p>La Imperial now highlights real brand collections with local product images, practical specs, and easy quick-view access for customers browsing premium appliances.</p>
+                                <div class="hero-actions">
+                                    <a href="#products" class="hero-btn hero-btn-light">View Products</a>
+                                    <a href="#brand-showcase" class="hero-btn hero-btn-outline">Browse Brands</a>
+                                </div>
+                            </div>
+                            <div class="hero-media">
+                                <img src="set-home-.webp" alt="Home appliances set">
+                            </div>
+                        </article>
+
+                        <div class="hero-side">
+                            <article class="promo-card promo-dark">
+                                <span class="promo-tag">Brand Focus</span>
+                                <h2>Compare major appliance brands in one clean storefront</h2>
+                                <p>Haier, Dawlance, LG, and Panasonic products are grouped for faster browsing and better brand recognition.</p>
+                                <a href="#brands">View Highlights</a>
+                            </article>
+                            <article class="promo-card promo-light">
+                                <span class="promo-tag">Detailed Listings</span>
+                                <h2>Real appliance details with specs, features, and images</h2>
+                                <p>Use the brand filter below to jump straight into the collection your customers want to explore.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="brand-showcase" class="category-showcase">
+                <div class="container">
+                    <div class="section-heading">
+                        <div>
+                            <span class="eyebrow">Shop by Brand</span>
+                            <h2>Choose the appliance brand your customer already trusts</h2>
+                        </div>
+                       <div class="dropdown">
+  <button onclick="toggleDropdown()" class="dropdown-btn">
+    All Brand ▼
+  </button>
+
+  <div id="dropdownMenu" class="dropdown-content">
+    <a href="haier.html" onclick="selectBrand('Haier')">Haier</a>
+    <a href="dawlance.html" onclick="selectBrand('Dawlance')">Dawlance</a>
+    <a href="lg.html" onclick="selectBrand('LG')">LG</a>
+    <a href="panasonic.html" onclick="selectBrand('Panasonic')">Panasonic</a>
+</div>
+</div>
+<p id="selectedBrand" style="margin-top:20px; font-weight:bold;"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="products" class="products-section">
+                <div class="container">
+                    <div class="section-heading">
+                        <div>
+                            <span class="eyebrow">Appliance Collection</span>
+                            <h2 id="productsSectionTitle">Featured Brand Products</h2>
+                        </div>
+                        <a class="view-all-link" href="#brands">View Brands</a>
+                    </div>
+
+                    <div class="products-grid">
+                        <article class="product-card mb-4" data-category="haier" data-description="Haier French Door Refrigerator HRF-525MB offers twin inverter cooling, deodorizing freshness, and a roomy 468 litre storage layout for modern families." data-specs='["Model: HRF-525MB", "Capacity: 468 Litres", "Cooling: Twin Inverter Technology", "Finish: Gemstone Black"]' data-features='["Deo Fresh system", "Humidity control zone", "Multi Air Flow", "Automatic defrost"]'>
+                            <div class="product-badge">Haier</div>
+                            <img src="Haier Refrigerator.png" class="product-image" alt="Haier Refrigerator">
+                            <div class="product-body">
+                                <span class="product-category">Haier</span>
+                                <h3 class="card-title">Haier Refrigerator</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.197,558</strong><br>
+                                    <span class="old-price">Rs.210,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="Haier Refrigerator" data-price="197558" data-image="images/haierappliances/Haier Appliances/Haier Refrigerator.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="Haier Refrigerator" data-price="197558">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="haier" data-description="Haier front load washer dryer HWD80-BP14636S combines 8 kg washing and 5 kg drying with a 1400 RPM spin speed and easy LED controls." data-specs='["Model: HWD80-BP14636S", "Wash Capacity: 8 kg", "Dry Capacity: 5 kg", "Spin Speed: 1400 RPM"]' data-features='["Washer dryer combo", "LED display", "Multiple wash options", "Durable build"]'>
+                            <div class="product-badge">Haier</div>
+                            <img src="Haier Washing Machine.png" class="product-image" alt="Haier Washing Machine">
+                            <div class="product-body">
+                                <span class="product-category">Haier</span>
+                                <h3 class="card-title">Haier Washer Dryer Combo</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.174,763</strong>
+                                    <span class="old-price">Rs.186,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="Haier Washer Dryer Combo" data-price="174763" data-image="images/haierappliances/Haier Appliances/Haier Washing Machine.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="Haier Washer Dryer Combo" data-price="174763">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="haier" data-description="Haier split air conditioner HSU30LPA03 delivers heavy-duty cooling for large rooms with a 2.5 ton capacity, rotary compressor performance, and low-noise comfort." data-specs='["Model: HSU30LPA03", "Capacity: 2.5 Ton", "Cooling: 30,000 BTU/hr", "Refrigerant: R-410A"]' data-features='["Rotary compressor", "Sleep mode", "Air purification", "Low-noise operation"]'>
+                            <div class="product-badge">Haier</div>
+                            <img src="Haier Air Conditioner.png" class="product-image" alt="Haier Air Conditioner">
+                            <div class="product-body">
+                                <span class="product-category">Haier</span>
+                                <h3 class="card-title">Haier Split Air Conditioner</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.220,353</strong>
+                                    <span class="old-price">Rs.235,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="Haier Split Air Conditioner" data-price="220353" data-image="Haier Air Conditioner.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="Haier Split Air Conditioner" data-price="220353">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="dawlance" data-description="Dawlance DFD 900 multi door sapphire inverter refrigerator delivers large family storage, glass door styling, and energy-saving inverter cooling." data-specs='["Model: DFD 900", "Capacity: 570-600 Litres", "Type: Multi Door Refrigerator", "Compressor: Rotary Inverter"]' data-features='["Glass door design", "Multi airflow system", "Automatic defrost", "Quick freeze function"]'>
+                            <div class="product-badge">Dawlance</div>
+                            <img src="Dawlance Refrigerator.png" class="product-image" alt="Dawlance Refrigerator">
+                            <div class="product-body">
+                                <span class="product-category">Dawlance</span>
+                                <h3 class="card-title">Dawlance Sapphire Inverter Refrigerator</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.252,153</strong>
+                                    <span class="old-price">Rs.265,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="Dawlance Sapphire Inverter Refrigerator" data-price="252153" data-image="images/dawlanceappliances/Dawlance Appliances/Dawlance Refrigerator.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="Dawlance Sapphire Inverter Refrigerator" data-price="252153">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="dawlance" data-description="Dawlance DW-142-HZP grilling microwave oven combines microwave and grill cooking with digital controls and compact countertop convenience." data-specs='["Model: DW-142-HZP", "Capacity: 20 Liters", "Microwave Power: 800W", "Grill Power: 1000W"]' data-features='["Cook King menus", "Grill function", "5 power levels", "Digital timer display"]'>
+                            <div class="product-badge">Dawlance</div>
+                            <img src="Dawlance Microwave.png" class="product-image" alt="Dawlance Microwave">
+                            <div class="product-body">
+                                <span class="product-category">Dawlance</span>
+                                <h3 class="card-title">Dawlance Grilling Microwave Oven</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.47,731</strong>
+                                    <span class="old-price">Rs.52,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="Dawlance Grilling Microwave Oven" data-price="47731" data-image="images/dawlanceappliances/Dawlance Appliances/Dawlance Microwave.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="Dawlance Grilling Microwave Oven" data-price="47731">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="dawlance" data-description="Dawlance Elegance X 1.5 ton inverter split AC is built for Pakistani summers with 4D airflow, low voltage operation, and efficient cooling for medium rooms." data-specs='["Model: Elegance X", "Capacity: 1.5 Ton", "Cooling: 18,000 BTU/hr", "Voltage Range: 160V-260V"]' data-features='["4D airflow", "Fast cooling mode", "Heat and cool", "Gold fin condenser"]'>
+                            <div class="product-badge">Dawlance</div>
+                            <img src="Dawlance Air Conditioner.png" class="product-image" alt="Dawlance Air Conditioner">
+                            <div class="product-body">
+                                <span class="product-category">Dawlance</span>
+                                <h3 class="card-title">Dawlance Inverter Split AC</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.147,305</strong>
+                                    <span class="old-price">Rs.158,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="Dawlance Inverter Split AC" data-price="147305" data-image="Dawlance Air Conditioner.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="Dawlance Inverter Split AC" data-price="147305">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+
+                        
+
+                        <article class="product-card mb-4" data-category="lg" data-description="LG InstaView Door-in-Door refrigerator GR-X39FFCRB brings premium black glass styling, cleaner dispensing, and smart ThinQ connectivity." data-specs='["Model: GR-X39FFCRB", "Type: InstaView Refrigerator", "Finish: Essence Black Steel", "Smart Control: LG ThinQ"]' data-features='["InstaView Door-in-Door", "UVnano dispenser", "LINEARCooling", "Hygiene Fresh+"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Refrigerator.png" class="product-image" alt="LG Refrigerator">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG InstaView Refrigerator</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.835,822</strong>
+                                    <span class="old-price">Rs.860,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG InstaView Refrigerator" data-price="835822" data-image="images/lgaappliances/LG Appliances/LG Refrigerator.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG InstaView Refrigerator" data-price="835822">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="lg" data-description="LG Grill Microwave Oven MH8265DIS delivers smart inverter heating, even defrosting, and fast everyday cooking in a spacious 42 litre cavity." data-specs='["Model: MH8265DIS", "Capacity: 42 Litres", "Technology: Smart Inverter", "Cooking: Grill + Microwave"]' data-features='["Even heating", "Even defrosting", "Fast cooking", "Large capacity"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Microwave.png" class="product-image" alt="LG Microwave">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Grill Microwave Oven</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.36,396</strong>
+                                    <span class="old-price">Rs.40,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Grill Microwave Oven" data-price="36396" data-image="images/lgaappliances/LG Appliances/LG Microwave.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Grill Microwave Oven" data-price="36396">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="lg" data-description="LG split air conditioner T18ZCA gives fast cooling, smart diagnosis, auto swing, and anti-corrosive protection in a 1.5 ton wall-mounted system." data-specs='["Model: T18ZCA", "Capacity: 1.5 Ton", "Controls: 24 hour timer", "Protection: Anti-corrosive coating"]' data-features='["Fast cooling", "Auto swing", "Smart diagnosis", "Auto restart"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Air Conditioner.png" class="product-image" alt="LG Air Conditioner">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Split Air Conditioner</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.110,177</strong>
+                                    <span class="old-price">Rs.121,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Split Air Conditioner" data-price="110177" data-image="LG Air Conditioner.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Split Air Conditioner" data-price="110177">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="lg" data-description="LG front load washer dryer F15L9DGD combines a 13 kg washer, 8 kg dryer, AI DD fabric care, TurboWash, steam technology, and ThinQ connectivity." data-specs='["Model: F15L9DGD", "Wash Capacity: 13 kg", "Dry Capacity: 8 kg", "Smart Control: LG ThinQ"]' data-features='["AI DD fabric sensing", "TurboWash", "Steam care", "Smart diagnosis"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Washing Machine.png" class="product-image" alt="LG Washing Machine">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Washer Dryer AI DD</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.203,105</strong>
+                                    <span class="old-price">Rs.218,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Washer Dryer AI DD" data-price="203105" data-image="LG Washing Machine.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Washer Dryer AI DD" data-price="203105">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="lg" data-description="LG freestanding dishwasher DFB325HM uses TrueSteam, QuadWash, EasyRack Plus, and Inverter Direct Drive performance for efficient premium dish care." data-specs='["Model: DFB325HM", "Type: Freestanding Dishwasher", "Drive: Inverter Direct Drive", "Smart Control: ThinQ"]' data-features='["TrueSteam", "QuadWash", "EasyRack Plus", "ThinQ support"]'>
+                            <div class="product-badge">LG</div>
+                            <img src="LG Dishwasher.png" class="product-image" alt="LG Dishwasher">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Freestanding Dishwasher</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.265,184</strong>
+                                    <span class="old-price">Rs.279,500</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="LG Freestanding Dishwasher" data-price="265184" data-image="LG Dishwasher.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="LG Freestanding Dishwasher" data-price="265184">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- LG STOP -->
+
+                        <article class="product-card mb-4" data-category="panasonic" data-description="Panasonic French Door Refrigerator NR-DZ600GTXN offers 600 litre storage, AI-controlled inverter cooling, and premium stainless styling." data-specs='["Model: NR-DZ600GTXN", "Capacity: 600 Litres", "Energy Use: 0.58 kWh/day", "Cooling: Panasonic Inverter with AI"]' data-features='["NanoHealth deodorizing", "Holiday mode", "Quick freeze", "Digital temperature control"]'>
+                            <div class="product-badge">Panasonic</div>
+                            <img src="Panasonic Refrigerator.png" class="product-image" alt="Panasonic Refrigerator">
+                            <div class="product-body">
+                                <span class="product-category">Panasonic</span>
+                                <h3 class="card-title">Panasonic French Door Refrigerator</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.310,000</strong>
+                                    <span class="old-price">Rs.328,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="Panasonic French Door Refrigerator" data-price="310000" data-image="images/panasonicappliances/Panasonic Appliances/Panasonic Refrigerator.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="Panasonic French Door Refrigerator" data-price="310000">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="panasonic" data-description="Panasonic convection microwave NN-CT645MFSR combines microwave, convection, grill, and combination cooking with sensor support and a 27 litre capacity." data-specs='["Model: NN-CT645MFSR", "Capacity: 27 Liters", "Microwave Power: 1000W", "Convection Power: 2500W"]' data-features='["True convection", "10 auto cook menus", "Sensor cooking", "Multi-stage cooking"]'>
+                            <div class="product-badge">Panasonic</div>
+                            <img src="Panasonic Microwave Oven.png" class="product-image" alt="Panasonic Microwave Oven">
+                            <div class="product-body">
+                                <span class="product-category">Panasonic</span>
+                                <h3 class="card-title">Panasonic Convection Microwave Oven</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.58,000</strong>
+                                    <span class="old-price">Rs.63,500</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="Panasonic Convection Microwave Oven" data-price="58000" data-image="images/panasonicappliances/Panasonic Appliances/Panasonic Microwave Oven.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="Panasonic Convection Microwave Oven" data-price="58000">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="panasonic" data-description="Panasonic split air conditioner CS-PS13UKF is a 1.5 ton inverter model with Eco Cool performance, R-32 refrigerant, and quiet room comfort." data-specs='["Model: CS-PS13UKF", "Capacity: 1.5 Ton", "Cooling: 18,000 BTU/hr", "Refrigerant: R-32"]' data-features='["Panasonic inverter", "Turbo cooling", "Blue fin condenser", "Whisper-quiet operation"]'>
+                            <div class="product-badge">Panasonic</div>
+                            <img src="Panasonic Airconditioner.png" class="product-image" alt="Panasonic Air Conditioner">
+                            <div class="product-body">
+                                <span class="product-category">Panasonic</span>
+                                <h3 class="card-title">Panasonic Split Air Conditioner</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.165,000</strong>
+                                    <span class="old-price">Rs.178,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="Panasonic Split Air Conditioner" data-price="165000" data-image="Panasonic Airconditioner.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="Panasonic Split Air Conditioner" data-price="165000">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="panasonic" data-description="Panasonic front load washing machine NA-S70H1RRB offers a 7 kg capacity, DD inverter motor, nano-diamond drum, and efficient 39-minute rapid wash support." data-specs='["Model: NA-S70H1RRB", "Capacity: 7 kg", "Motor: DD Inverter", "Spin Speed: 1200 RPM"]' data-features='["Nano-diamond drum", "Eco wash", "Rapid wash 39 min", "Tub dry function"]'>
+                            <div class="product-badge">Panasonic</div>
+                            <img src="Panasonic Washing Machine.png" class="product-image" alt="Panasonic Washing Machine">
+                            <div class="product-body">
+                                <span class="product-category">Panasonic</span>
+                                <h3 class="card-title">Panasonic Front Load Washing Machine</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.180,000</strong>
+                                    <span class="old-price">Rs.194,000</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="Panasonic Front Load Washing Machine" data-price="180000" data-image="Panasonic Washing Machine.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="Panasonic Front Load Washing Machine" data-price="180000">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card mb-4" data-category="panasonic" data-description="Panasonic dishwasher DW-BFD12J supports 12 place settings, sensor drying, adjustable racks, and low-water dish cleaning in a quiet stainless-steel build." data-specs='["Model: DW-BFD12J", "Capacity: 12 Place Settings", "Water Use: 7 Liters per cycle", "Noise Level: 42 dB(A)"]' data-features='["5 auto programs", "Sensor dry", "Auto open drying", "Adjustable racks"]'>
+                            <div class="product-badge">Panasonic</div>
+                            <img src="Panasonic Dishwasher.png" class="product-image" alt="Panasonic Dishwasher">
+                            <div class="product-body">
+                                <span class="product-category">Panasonic</span>
+                                <h3 class="card-title">Panasonic Dishwasher</h3>
+                                <div class="price-stack">
+                                    <strong class="sale-price">Rs.195,000</strong>
+                                    <span class="old-price">Rs.208,500</span>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn-outline view-details" data-product="Panasonic Dishwasher" data-price="195000" data-image="Panasonic Dishwasher.png">Quick View</button>
+                                    <button class="btn-solid add-to-cart" data-product="Panasonic Dishwasher" data-price="195000">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="deals" class="deal-banner">
+                <div class="container deal-banner-inner">
+                    <div>
+                        <span class="eyebrow">Dhamakedar Deals</span>
+                        <h2>Imported essentials and branded appliances with strong visual merchandising</h2>
+                    </div>
+                    <a href="#products" class="hero-btn hero-btn-dark">Explore Offers</a>
+                </div>
+            </section>
+
+            <section id="brands" class="brands-section">
+                <div class="container">
+                    <div class="section-heading">
+                        <div>
+                            <span class="eyebrow">Featured Brands</span>
+                            <h2>Leading appliance names now presented with their own spotlight</h2>
+                        </div>
+                    </div>
+
+                    <div class="brand-grid">
+                        <article class="brand-card product-card" data-category="haier" data-description="Haier combines practical household appliances with strong cooling, washing, and kitchen options for everyday family use." data-specs='["Focus: Refrigeration", "Strength: Washer Dryer Range", "Style: Modern Finishes", "Support: Home appliance lineup"]' data-features='["Refrigerators", "Washers", "Dishwashers", "Microwaves"]'>
+                            <div class="product-badge">Brand Pick</div>
+                            <img src="all haier.jpg" class="product-image" alt="Haier Appliances">
+                            <div class="product-body">
+                                <span class="product-category">Haier</span>
+                                <h3 class="card-title">Haier Appliance Range</h3>
+                                <div class="product-actions">
+                                    <a class="btn-outline" href="haier.html">View Products</a>
+                                    <a class="btn-solid" href="haier.html">Explore Brand</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="brand-card product-card" data-category="dawlance" data-description="Dawlance offers reliable refrigerators, microwaves, washers, and more with strong value for local households." data-specs='["Focus: Everyday Appliances", "Strength: Refrigeration", "Style: Practical Premium", "Support: High local familiarity"]' data-features='["Refrigerators", "Microwaves", "Washers", "Kitchen essentials"]'>
+                            <div class="product-badge">Brand Pick</div>
+                            <img src="all dawlance.jpg" class="product-image" alt="Dawlance Appliances">
+                            <div class="product-body">
+                                <span class="product-category">Dawlance</span>
+                                <h3 class="card-title">Dawlance Appliance Range</h3>
+                                <div class="product-actions">
+                                    <a class="btn-outline" href="dawlance.html" >View Products</a>
+                                    <a class="btn-solid" href="dawlance.html" >Explore Brand</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="brand-card product-card" data-category="lg" data-description="LG stands out for smart, premium home appliances with Wi-Fi features, refined finishing, and advanced cooling and cooking technology." data-specs='["Focus: Smart Appliances", "Strength: Premium Refrigeration", "Technology: ThinQ", "Style: Modern luxury finish"]' data-features='["ThinQ connectivity", "InstaView refrigerators", "Microwaves", "Dishwashers"]'>
+                            <div class="product-badge">Brand Pick</div>
+                            <img src="ALL LG.webp" class="product-image" alt="LG Appliances">
+                            <div class="product-body">
+                                <span class="product-category">LG</span>
+                                <h3 class="card-title">LG Appliance Range</h3>
+                                <div class="product-actions">
+                                    <a class="btn-outline" href="LG.html" >View Products</a>
+                                    <a class="btn-solid" href="LG.html" >Explore Brand</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="brand-card product-card" data-category="panasonic" data-description="Panasonic brings efficient refrigerators, microwaves, washers, and kitchen appliances with clean stainless design and dependable operation." data-specs='["Focus: Efficient Home Appliances", "Strength: Refrigeration & Kitchen", "Design: Stainless premium finish", "Value: Balanced performance"]' data-features='["French door refrigerators", "Convection microwaves", "Washers", "Dishwashers"]'>
+                            <div class="product-badge">Brand Pick</div>
+                            <img src="ALL PANASONIC.jpg" class="product-image" alt="Panasonic Appliances">
+                            <div class="product-body">
+                                <span class="product-category">Panasonic</span>
+                                <h3 class="card-title">Panasonic Appliance Range</h3>
+                                <div class="product-actions">
+                                    <a class="btn-outline" href="panasonic.html">View Products</a>
+                                    <a class="btn-solid" href="panasonic.html">Explore Brand</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="newsletter" class="newsletter-section">
+                <div class="container newsletter-box">
+                    <div>
+                        <span class="eyebrow">Newsletter</span>
+                        <h2>Be the first to know about deals, new brand arrivals, and store updates</h2>
+                        <p>Customers can subscribe for appliance launches, featured brand offers, and store announcements from La Imperial.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address">
+                        <button type="button">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div>
+                    <h3>La Imperial Appliances</h3>
+                    <p>Your go-to store for dependable home appliances, product discovery, and support that feels familiar to major ecommerce storefronts.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="About us.html">About Us</a>
+                    <a href="contact us.html">Contact Us</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+                <div>
+                    <h4>Payment Methods</h4>
+                    <p>Secure online payment options available for your orders.</p>
+                    <div class="footer-payments">
+                        <img src="Visa Logo.png" alt="Visa">
+                        <img src="Mastercard Logo.png" alt="Mastercard">
+                        <img src="Jazzcash Logo.png" alt="JazzCash">
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <p>&copy; 2026 La Imperial Appliances. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems">
+                        <p class="text-center">Your cart is empty</p>
+                    </div>
+                    <div id="cartTotal" class="mt-3 d-none">
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <strong>Total: Rs.<span id="totalAmount">0.00</span></strong>
+                        </div>
+                        <div class="payment-panel">
+                            <div class="payment-heading">
+                                <h6>Select Online Payment Method</h6>
+                                <p>Choose Visa, Mastercard, or JazzCash before checkout.</p>
+                            </div>
+                            <div class="payment-methods">
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="Visa" data-payment-type="card">
+                                    <span class="payment-method-card">
+                                        <img src="Visa Logo.png" alt="Visa">
+                                        <strong>Visa</strong>
+                                    </span>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="Mastercard" data-payment-type="card">
+                                    <span class="payment-method-card">
+                                        <img src="Mastercard Logo.png" alt="Mastercard">
+                                        <strong>Mastercard</strong>
+                                    </span>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="JazzCash" data-payment-type="wallet">
+                                    <span class="payment-method-card">
+                                        <img src="Jazzcash Logo.png" alt="JazzCash">
+                                        <strong>JazzCash</strong>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div id="cardPaymentFields" class="payment-fields card border-0 bg-body-tertiary mt-3">
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="cardName" class="form-label">Cardholder Name</label>
+                                            <input type="text" class="form-control" id="cardName" placeholder="Enter cardholder name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cardNumber" class="form-label">Card Number</label>
+                                            <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cardExpiry" class="form-label">Expiry Date</label>
+                                            <input type="text" class="form-control" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cardCvv" class="form-label">CVV</label>
+                                            <input type="password" class="form-control" id="cardCvv" placeholder="123" maxlength="4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="walletPaymentFields" class="payment-fields card border-0 bg-body-tertiary mt-3 d-none">
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="walletNumber" class="form-label">JazzCash Number</label>
+                                            <input type="text" class="form-control" id="walletNumber" placeholder="03XX XXXXXXX" maxlength="11">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="walletPin" class="form-label">Transaction PIN</label>
+                                            <input type="password" class="form-control" id="walletPin" placeholder="Enter PIN" maxlength="6">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="paymentMessage" class="alert d-none mt-3 mb-0" role="alert"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button type="button" class="btn btn-primary" id="checkoutBtn" disabled>Pay Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-md-6">
+                            <img id="productImage" src="" alt="" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 id="productTitle"></h4>
+                            <p class="h5 text-dark mb-3" id="productPrice"></p>
+                            <p id="productDescription" class="mb-3"></p>
+                            <h6>Specifications</h6>
+                            <ul id="productSpecs" class="mb-3"></ul>
+                            <h6>Key Features</h6>
+                            <ul id="productFeatures"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark" id="addToCartFromModal">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/cart-storage.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>
